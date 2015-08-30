@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="1" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Paginas.Passo1">
+	<ContentPage.Content>
+	<StackLayout Orientation="Horizontal">
+		<TableView Intent="Form" HasUnevenRows="true">
+			<TableRoot>
+				<TableSection>
+					<EntryCell Label="Nome" />
+					<EntryCell Label="Sobrenome" />
+					<ViewCell>
+						<DatePicker />
+					</ViewCell>
+					<ViewCell >
+						<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+							<Label Text="Descreva seu Perfil: " />
+							<Editor HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+						</StackLayout>
+					</ViewCell>
+				</TableSection>
+			</TableRoot>
+		</TableView>
+		<Button Text="Ir pra aba2" Clicked="GoToNextIndex_Clicked" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

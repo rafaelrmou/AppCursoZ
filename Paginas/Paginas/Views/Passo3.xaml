@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="3" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Paginas.Passo3">
+	<ContentPage.Content>
+	<TableView Intent="Settings" HasUnevenRows="true">
+			<TableRoot>
+				<TableSection>
+					<SwitchCell Text="Notificações" />
+				</TableSection>
+			</TableRoot>
+		</TableView>
+	</ContentPage.Content>
+</ContentPage>

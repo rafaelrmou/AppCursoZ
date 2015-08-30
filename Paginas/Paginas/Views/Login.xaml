@@ -1,29 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
- xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
- x:Class="Paginas.Login" BackgroundColor="Red">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Paginas.Login" BackgroundColor="Red">
 	<ContentPage.Content>
-		<StackLayout HorizontalOptions="Center" 
-		VerticalOptions="Center" BackgroundColor="Blue"
-		Padding="5">
-			<Image WidthRequest="200" 
-			HeightRequest = "200" 
-			BackgroundColor="Fuchsia"
-			Source="icon-60.png" />
-			<Entry Placeholder="User Name" 
-			TextColor="Purple" Keyboard="Email"/>
-			<Entry Placeholder="Senha" Keyboard="Numeric"
-			IsPassword="true" />
-			<Button Text="Login"
-			 TextColor="Yellow" 
-			 BackgroundColor="Gray" 
-			 Clicked="Login_Clicked"/>
-			<Button BackgroundColor="Transparent" 
-			TextColor="Lime" 
-			BorderWidth="0" 
-			BorderColor="Transparent"
-			Text="Criar Conta"
-			FontSize="12" Clicked="Cadastro_Clicked" />
-		</StackLayout>
+		<ScrollView>
+			<StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Blue" Padding="5">
+				<Image WidthRequest="200" HeightRequest="200" BackgroundColor="Fuchsia" Source="icon-60.png" />
+				<Entry Placeholder="User Name" TextColor="Purple" Keyboard="Email" />
+				<Entry Placeholder="Senha" Keyboard="Numeric" IsPassword="true" />
+				<Button Text="Login" TextColor="Yellow" BackgroundColor="Gray" Clicked="Login_Clicked" />
+				<Button BackgroundColor="Transparent" TextColor="Lime" BorderWidth="0" BorderColor="Transparent" Text="Criar Conta" FontSize="12" Clicked="Cadastro_Clicked" />
+			</StackLayout>
+		</ScrollView>
 	</ContentPage.Content>
 </ContentPage>
