@@ -41,7 +41,7 @@ namespace ListaApp
 			pck.BackgroundColor = Color.Red;
 			Content = pck;
 
-//			pck.Cu
+//			pck.CurrentItem
 		}
 
 		void Pck_SelectedIndexChanged (object sender, EventArgs e)
