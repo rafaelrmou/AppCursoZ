@@ -11,12 +11,14 @@ namespace ListaApp
 			get;
 			set;
 		}
+
 		public PickerPage ()
 		{
 			InitializeComponent ();
 
 
-			 pck = new CustomPicker<Aluno> ();
+			pck = new CustomPicker<Aluno> ();
+			pck.Title = "Text";
 			pck.ObjList = new List<Aluno> () { 
 				new Aluno () {
 					ID = 1,
@@ -36,7 +38,7 @@ namespace ListaApp
 			};
 
 			pck.SelectedIndexChanged += Pck_SelectedIndexChanged;
-
+			pck.BackgroundColor = Color.Red;
 			Content = pck;
 
 //			pck.Cu

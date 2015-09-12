@@ -23,7 +23,7 @@ namespace ListaApp
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new ListaZapZap();
+			MainPage = new PickerPage();
 		}
 
 		protected override void OnStart ()
