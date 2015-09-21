@@ -67,12 +67,12 @@ namespace ViewModel
 //							Acr.UserDialogs.UserDialogs.Instance.HideLoading();
 
 							if(t.Result){
-
+								PaginaAtual.Navigation.PopAsync();
 								//PaginaAtual.DisplayAlert("ok","ok","ok");
 							}
 							else{
-
-								//PaginaAtual.DisplayAlert("nook","nook","nook");
+								
+								PaginaAtual.DisplayAlert("nook","nook","nook");
 							}
 						});
 					});

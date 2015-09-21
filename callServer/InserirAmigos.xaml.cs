@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using ViewModel;
 
 namespace callServer
 {
-	public partial class AmigoDetail : ContentPage
+	public partial class InserirAmigos : ContentPage
 	{
-		public AmigoDetail (ViewModel.AmigoVM Atual)
+		public InserirAmigos ()
 		{
 			InitializeComponent ();
-			BindingContext = Atual;
+
+			BindingContext = new AmigoVM (this);
+
 		}
 	}
 }

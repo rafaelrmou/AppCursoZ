@@ -15,7 +15,20 @@ namespace callServer
 		{
 			InitializeComponent ();
 			ViewModel = new ViewModel.AmigoVM (this);
-			BindingContext = ViewModel.GetAll ();
+			Carregar ();
+			ToolbarItems.Add(new ToolbarItem("Add","Icon-60.png",()=>{
+				Navigation.PushAsync (new InserirAmigos());
+			}));
+		}
+
+		async void Carregar(){
+			Lista.ItemsSource = await ViewModel.GetAll ();
+			Lista.ItemSelected += Lista_ItemSelected;
+		}
+
+		void Lista_ItemSelected (object sender, SelectedItemChangedEventArgs e)
+		{
+			Navigation.PushAsync (new AmigoDetail (e.SelectedItem as ViewModel.AmigoVM));
 		}
 	}
 }
