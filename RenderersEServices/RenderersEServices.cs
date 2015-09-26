@@ -9,17 +9,11 @@ namespace RenderersEServices
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			MainPage = new CustomNavigationPage (
+				new ContentPage () {
+					Content = new Label (){ Text = "Icone Star" }
+				}, 
+				"star.png");
 		}
 
 		protected override void OnStart ()
