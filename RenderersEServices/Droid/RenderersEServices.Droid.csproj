@@ -70,6 +70,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MyButtonRenderer.cs" />
     <Compile Include="CustomNavigationPage.cs" />
+    <Compile Include="Falar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -14,6 +14,8 @@ namespace RenderersEServices
 					Content = new Label (){ Text = "Icone Star" }
 				}, 
 				"star.png");
+
+			DependencyService.Get<IFalar> ().Conversar ("Olá Alunos da Zarb Solutions");
 		}
 
 		protected override void OnStart ()
