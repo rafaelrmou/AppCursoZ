@@ -15,7 +15,7 @@ namespace RenderersEServices
 				}, 
 				"star.png");
 
-			DependencyService.Get<IFalar> ().Conversar ("Olá Alunos da Zarb Solutions");
+			DependencyService.Get<IFalar> ().Conversar ("Olá Leitores");
 		}
 
 		protected override void OnStart ()
